@@ -8,6 +8,7 @@ import PhoneNumber from '../screens/Onboarding/PhoneNumber';
 import OTP from '../screens/Onboarding/OTP';
 import Createacc from '../screens/Onboarding/Createacc';
 import Tab from './Tab';
+import AllCategories from '../screens/Product/AllCategories';
 
 const Stack = () => {
   const Stack = createNativeStackNavigator();
@@ -25,6 +26,7 @@ const Stack = () => {
         <Stack.Screen name="Phone" component={PhoneNumber}/>
         <Stack.Screen name="OTP" component={OTP}/>
         <Stack.Screen name="Createacc" component={Createacc}/>
+        <Stack.Screen name="AllCategories" component={AllCategories}/>
     
       </Stack.Navigator>
     </NavigationContainer>
