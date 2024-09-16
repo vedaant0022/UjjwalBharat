@@ -4,8 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import LinearGradient from 'react-native-linear-gradient'
 import { moderateScale, moderateScaleVertical } from '../../styles/responsiveSize'
 import { useNavigation } from '@react-navigation/native'
-import { successMessage } from '../../utils'
-import FlashMessage from 'react-native-flash-message'
+
 
 
 const PhoneNumber = () => {
@@ -49,7 +48,7 @@ const navigation = useNavigation();
                         <TouchableOpacity 
                         onPress={()=>{navigation.navigate('OTP')}}
                         style={{ width: '100%', padding: 15, alignItems: 'center' }}>
-                            <LinearGradient colors={['#fbc97f', '#f87c29']} start={{ x: 0, y: 1 }} end={{ x: 0.4, y: 0}} style={{ width: '90%', padding: 15, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', borderRadius: 9, marginTop: moderateScaleVertical(20), height: moderateScaleVertical(50), }}>
+                            <LinearGradient colors={['#fbc97f', '#f87c29']} start={{ x: 0, y: 1 }} end={{ x: 0.4, y: 0}} style={{ width: '90%', padding: 15, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', borderRadius: 15, marginTop: moderateScaleVertical(20), height: moderateScaleVertical(50), }}>
                                 <Text style={{ fontSize: 18, color: '#fff',fontWeight:'600' }}>Sent OTP</Text>
                             </LinearGradient>
                         </TouchableOpacity>

@@ -88,7 +88,7 @@ const OTP = () => {
                         <TouchableOpacity 
                         onPress={()=>{navigation.navigate('Createacc')}}
                         style={{ width: '95%', padding: 15, alignItems: 'center' }}>
-                            <LinearGradient colors={['#fbc97f', '#f87c29']} start={{ x: 0, y: 1 }} end={{ x: 0.4, y: 0 }} style={{ width: '90%', padding: 15, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', borderRadius: 9, marginTop: moderateScaleVertical(40), height: moderateScaleVertical(50), }}>
+                            <LinearGradient colors={['#fbc97f', '#f87c29']} start={{ x: 0, y: 1 }} end={{ x: 0.4, y: 0 }} style={{ width: '90%', padding: 15, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', borderRadius: 15, marginTop: moderateScaleVertical(40), height: moderateScaleVertical(50), }}>
                                 <Text style={{ fontSize: 18, color: '#fff',fontWeight:'500' }}>Continue</Text>
                             </LinearGradient>
                         </TouchableOpacity>
@@ -113,6 +113,6 @@ const OTP = () => {
     )
 }
 
-
-
 export default OTP
+
+
